@@ -1,0 +1,446 @@
+/* обнуляем все отступы */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    } 
+
+ 
+    @font-face {
+    font-family: Oswald-r; /* Имя шрифта */
+    src: url(fonts/Oswald-Regular.ttf); /* Путь к файлу со шрифтом Regular*/
+    }
+
+    @font-face {
+        font-family: Oswald-b; /* Имя шрифта */
+        src: url(fonts/Oswald-Bold.ttf); /* Путь к файлу со шрифтом Bold*/
+        }
+
+    @font-face {
+        font-family: Roboto; /* Имя шрифта */
+        src: url(fonts/Roboto-Light.ttf); /* Путь к файлу со шрифтом Regular*/
+        }
+
+    @font-face {
+        font-family: Lastochka; 
+        src: url(fonts/ofont.ru_Lastochka.ttf);
+       }
+
+    @font-face {
+    font-family: Newtown; 
+    src: url(fonts/ofont.ru_OptimusC.ttf);
+        }
+    body {
+
+       /*  background-color: #f4d87e; */
+        background-position: top;
+        /* background-size: 100%;*/
+        background-size: cover;
+
+    }
+
+
+    .shapka{/* Это шапка первая */
+        width: 100vw;
+        height: 10vh;
+        background-color: #f2cd7f;
+        text-align: right;
+        margin-right: 50px;
+        vertical-align: baseline;
+
+        display: flex;
+    }
+
+    .shapka2{
+        width: 98vw;
+        height: auto;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex; /* Важно у родительского элемента! */
+
+
+    }
+.menu{/* текстовая часть */
+    width: 50%;
+    background-color: #f2cd7f;
+
+    align-content: center;
+    margin-right: 250px;
+    line-height: 3em;
+    font-size: 22px;
+    font-family: Oswald-r;
+    font-weight: 700;
+    color: black;
+    }
+
+.logo{
+
+    width: 10%;
+    height: auto;
+}
+
+ ul.hr {
+    margin: 0;
+    padding: 4px;
+   }
+   ul.hr li {
+    display: inline; 
+    margin-right: 5px; 
+   }
+
+.hr a{
+    text-decoration:none;
+    color: #674c48;
+  }
+
+.web{
+    height: auto;
+}
+.palka{
+    color:gray;
+}
+ 
+/* ------------------ */
+
+.menu li {
+    list-style: none; /*убираем точки*/
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 25px; /*расстояние между пунктами меню*/
+    
+    }
+
+
+.active a {
+color: #000000; /* Цвет активных ссылок */
+border-bottom:3px solid #000;
+
+}
+.menu>ul {
+list-style-type: none;
+color: #fff;
+}
+.menu a{
+
+text-decoration: #919191; /* Цвет неактивного меню */
+}
+.menu a:hover {
+color: #fff; /* Цвет когда стрелка сверху ссылок */
+font-size: 23px;
+
+}
+
+  .niz1 {
+    margin-top: 350px;
+    list-style: none; /*убираем точки*/
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 455px; /*расстояние между пунктами меню*/
+    word-wrap: break-word;
+    opacity: 0.7;
+    color: white;
+  }
+/* ------------------ */
+
+
+
+
+
+/* ------------------ */
+    .block{
+        width: 95vw;
+        height: 10vh;
+ /*        margin-top: 1vh; */
+        margin-bottom: 2vh;
+        display: flex; 
+    }
+
+    .me{
+
+        width: 85%;
+        height: auto;
+        text-align: center;
+        padding-left: 10px;
+        padding-top: 30px;
+        
+    }
+    .h1{
+            color: #585858;
+            font-size: 36px;
+            font-family: Oswald-b;
+            font-weight: 700;
+            /* transform: scaleY(2.7); */ /* вытягиваем шрифт */
+            /* letter-spacing: 10px; */ /* расстояние между буквами */
+            /* margin-top: -20px; */
+
+
+    }
+h2{
+            color:#5e5d5d;
+            font-size: 25px;
+            font-family: Oswald-r;
+/*             font-weight: 700; */
+/*             line-height: 130px; */
+            text-align: center;
+ /*            word-spacing: 27px; */
+/*             hyphens: auto; */
+
+    }
+
+    .navik h3{
+        width: 100vw;
+        height: auto;
+
+        margin-top: 50px;
+        font-size: 80px;
+        letter-spacing: 1px;
+    }
+
+    .left1{/* ковычки */
+
+        width: 40%;
+        height: auto;
+        text-align: right;
+        font-size: 100px;
+        font-family: Newtown;
+        vertical-align: top;
+        margin-top: -44px;
+        color: #919191;
+    }
+
+   .right{
+
+    width: 30%;
+    height: 50px;
+    justify-items: right;
+}
+
+    .kovich{
+
+        width: 85%;
+        height: auto;
+        text-align: center;
+        color:#5e5d5d;
+        font-size: 60px;
+        font-family: Lastochka;
+        text-align: left;
+        padding-left: 20px;
+        
+    }
+
+    .foto{
+        border: 5px solid rgb(238, 142, 142);
+        width: 15%;
+        height: 150px;
+    }
+
+
+    .card {/* мое фото */
+        width: 200px;
+        height: 200px;
+        background: url(img/I-1.jpg) no-repeat;
+    }
+    .card:hover {
+        background: url(img/I-2.jpg) no-repeat;
+    }
+
+    .opisanie1{
+        margin-left: auto;
+        margin-right: auto;
+        width: 60em;
+    
+        margin-top: 10px; /* расстояние между абзацами сделала */
+
+        color:#5e5d5d;
+        font-size: 20px;
+        font-family: Oswald-r;
+        text-align: center;
+        padding-left: 20px;
+        padding-top: 0px;
+        line-height: 1.1em;/* расстояние между строками */
+    }
+
+    .img1{
+        width: 50px;
+        height: 95px;
+        margin-top: -44px;
+        margin-left: -35px;
+
+    }
+
+/* проги */
+.progi1, .progi2{
+        width: 98vw;
+        height: auto;
+
+        margin-top: 6vh;
+        margin-bottom: 7vh;
+        display: flex; /* Важно у родительского элемента! */
+}
+.ps {
+
+    width: 30%;
+    height: auto;
+    text-align: center;
+} 
+.ps img{
+    width: 80%;
+    text-align: center;
+}
+/* Речь моя */
+[speech-bubble], [speech-bubble] * { box-sizing: border-box }
+
+[speech-bubble]{
+  --bbArrowSize: 2.5rem;
+  --bbBorderRadius: 0.80rem;
+  --bbPadding: 2rem;
+  background: var(--bbColor);
+  border-radius: var(--bbBorderRadius);
+  padding: var(--bbPadding);
+  position: relative;
+}
+
+[speech-bubble]::before{
+  content: ''; 
+  position: absolute;
+  background: var(--bbColor);
+}
+/* лево и право  */
+[speech-bubble]::before{
+  --height: calc(var(--bbArrowSize) / 2 *3);
+  width: var(--bbArrowSize);
+  height: var(--height);
+}
+/* из квадратика уголок слева */
+[speech-bubble]::before{
+  right: calc(100% - 2px);
+}
+[speech-bubble]::before{
+  top: calc(50% - var(--height) / 2);
+  clip-path: polygon(0 50%, 100% 12.5%, 100% 87.5%);
+}
+/* ------------------ */
+
+
+
+
+
+/* ------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #f2cd7f;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #000;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #909090;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #000;
+	text-decoration: none;
+	font-weight: 300;
+	color: #000;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #f2cd7f;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/* ----------------- */
+    .block2{
+
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+   }
+   .block2::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 920px; bottom: -20px; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-top: 10px solid #585858; /* Добавляем треугольник */
+   }
+
+
+
+
+
+

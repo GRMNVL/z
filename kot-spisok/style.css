@@ -1,0 +1,129 @@
+*{
+    border:transparent;
+}
+html {
+    font-family: 'Courier New', Courier, monospace;
+/*     background-color:rgba(240, 178, 104, 0.8); */
+    background-image: url(fon_big.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.wrapper{
+    width: 800px;
+    margin: auto;
+    margin-top: 70px;
+  /*   background-color: #625f5f; */
+    background-image: url(fon1.jpg);
+    border-radius: 15px;
+    text-align: center;
+    color: #625f5f;
+    font-size: 50px;
+    font-family:'Courier New', Courier, monospace;
+    padding: 20px;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.5);
+   
+    
+}
+
+
+.block1 {
+    width: 100%;
+    display: flex;
+    color: #000;
+  /*   padding: 20px; */
+    text-align: center;
+}
+.img{
+    width: 300px;
+    height: auto;
+    transform: rotate(17deg);
+    padding-left: 0px;
+    margin-top: 180px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.5);
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+}
+.img2{
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    
+}
+.img3{
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    
+}
+ .wrapper h1{
+    margin-top: 10px;
+    color: #5b3627;
+    font-size: 50px;
+} 
+
+.wrapper p{
+    text-align: justify;
+    font-size: 30px;
+    font-weight: 600;
+}
+.vopros{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2px;
+    /* color: rgba(0, 0, 0, 0.2); */   
+}
+
+.wrapper ul{
+    list-style: none;
+    text-align: left;
+}
+.wrapper li{
+    margin-bottom: 10px;
+}
+.wrapper input{
+    height: 50px;
+    width: 80%;
+    line-height: 30px;
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    background: transparent;
+    border: transparent;
+    justify-content:center;
+    font-weight: 300;
+    opacity: 0.3s;
+    font-family: monospace;
+    display: inline;
+    outline: 0;
+    outline-offset: 0;
+}
+.wrapper button{
+    margin-left: 5px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #625f5f;
+    border: transparent;
+    text-transform: uppercase;
+    outline: 0;
+    outline-offset: 0;
+    background-color: transparent;
+ 
+}
+/* .wrapper hr{
+    background-color: black;
+    margin-top: 35px;
+    margin-bottom: 15px;
+} */
+.wrapper span{
+    color: #ee0909;
+    font-weight: 900;
+    font-size: 28px;
+
+}
+.wrapper span:hover{
+   font-size: 30px;
+   color: red;
+   outline: 0;
+   outline-offset: 0;
+  
+}

@@ -1,0 +1,174 @@
+@font-face {
+    font-family: Oswald-r; /* Имя шрифта */
+    src: url(./fonts/Oswald-Regular.ttf); /* Путь к файлу со шрифтом Regular*/
+    }
+
+    @font-face {
+        font-family: Oswald-b; /* Имя шрифта */
+        src: url(./fonts/Oswald-Bold.ttf); /* Путь к файлу со шрифтом Bold*/
+        }
+
+
+body{
+    background:#dad0d0;
+    margin:0;
+}/*фон страницы*/
+
+
+.shapka{/* Это шапка первая */
+    width: 100vw;
+    height: 10vh;
+    background-color: #f2cd7f;
+    text-align: right;
+    margin-right: 50px;
+    vertical-align: baseline;
+    display: flex;
+}
+.web{
+    height: auto;
+
+}
+.palka{
+    color:gray;
+}
+ul.hr {
+    margin: 0;
+    padding: 4px;
+   }
+   ul.hr li {
+    display: inline; 
+    margin-right: 5px; 
+   }
+
+.hr a{
+    text-decoration:none;
+    color: #674c48;
+  }
+  .menu{/* текстовая часть */
+    width: 50%;
+    background-color: #f2cd7f;
+
+    align-content: center;
+    margin-right: 250px;
+    line-height: 3em;
+    font-size: 22px;
+    font-family: Oswald-r;
+    font-weight: 700;
+    color: black;
+    }
+
+  .menu li {
+    list-style: none; /*убираем точки*/
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 25px; /*расстояние между пунктами меню*/
+    
+    }
+
+
+.active a {
+color: #000000; /* Цвет активных ссылок */
+border-bottom:3px solid #000;
+
+}
+
+.menu>ul {
+    list-style-type: none;
+    color: #fff;
+    }
+    .menu a{
+    
+    text-decoration: #919191; /* Цвет неактивного меню */
+    }
+    .menu a:hover {
+    color: #000; /* Цвет когда стрелка сверху ссылок */
+    font-size: 23px;
+    
+    }
+    .logo{
+        width: 10%;
+        height: auto;
+    }
+    
+    
+
+.form{
+    width:540px;
+    height:auto;
+    background:#fff;
+    border-radius:28px;
+    margin:calc(50vh - 220px) auto;
+    padding:40px 40px;
+    max-width:calc(100vw - 40px);
+    box-sizing: border-box;
+    border: 5px solid #f2cd7f;
+    box-shadow: 8px 8px 12px 0px rgba(34, 80, 55, 0.2);
+    font-family: Oswald-b;
+
+    
+}
+
+.form1{
+
+    margin-bottom: 20px 20px;
+
+    
+}
+
+.dr{
+    justify-content: center;
+    margin-left: 30px;
+}
+h2{
+    margin:10px;
+    padding-bottom:10px;
+    width:250px;
+    color:#919191;
+    border-bottom:3px solid #1c12a8;
+    text-align: center;
+} /*первая строка*/
+
+
+input {
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family: Oswald-b;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2;
+    text-align: center;
+}
+
+input:focus{
+    border-bottom:2px solid #78788c
+} 
+
+
+
+    .button{
+    width: 200px;
+    font-family: Oswald-b;
+    border:2px solid #78788c;
+    border-radius: 25px;
+    background:#f2cd7f;
+    margin-left: 145px;
+    margin-top: 30px;
+    user-select: none;
+    }
+    
+.button:hover{
+    background:#f1a80b;
+    color:#000;
+    cursor: pointer;/* стрелка вместо курсора */
+}
+
+.button:active{
+    background:#f15f0b;
+    color:#000;
+    cursor: pointer;/* стрелка вместо курсора */
+}

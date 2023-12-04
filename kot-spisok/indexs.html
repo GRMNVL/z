@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<div id="app">
+    
+    <span>
+    <img class="img" src="k.jpg">
+    </span>
+
+    <div class="wrapper">
+        <h1>~ Cписок вкусняшек ~</h1>
+        <div class="block1">
+            <p>Что делать мурлыке и как поступить?
+            На десять копеек он хочет купить:
+            Конфету, сметану, котлету.
+            Никак не уложится в смету!</p>
+
+        </div>
+        <div class="vopros"><input v-model="item" placeholder="Напиши сюда чего хочешь, котик?">
+        <button @click="add_list()" v-if="item==''" disabled><img class="img2" src="sled2.png"></button>
+        <button @click="add_list()" v-else><img class="img2" src="sled2.png"></button></div>
+
+        
+        <!-- <hr> -->
+        <ul>
+            <li v-for="(text_item, index) in list">
+                {{text_item}} <span @click="deleteItem(index)"><img class="img3" src="no.png"></span>
+            </li>
+        </ul>
+    
+    </div>
+    
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

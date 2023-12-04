@@ -1,0 +1,284 @@
+/* обнуляем все отступы */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    } 
+
+@font-face {
+    font-family: Oswald-r; /* Имя шрифта */
+    src: url(fonts/Oswald-Regular.ttf); /* Путь к файлу со шрифтом Regular*/
+    }
+
+    @font-face {
+        font-family: Oswald-b; /* Имя шрифта */
+        src: url(fonts/Oswald-Bold.ttf); /* Путь к файлу со шрифтом Bold*/
+        }
+
+    @font-face {
+        font-family: Roboto; /* Имя шрифта */
+        src: url(fonts/Roboto-Light.ttf); /* Путь к файлу со шрифтом Regular*/
+        }
+
+    @font-face {
+        font-family: Lastochka; 
+        src: url(fonts/ofont.ru_Lastochka.ttf);
+       }
+
+    @font-face {
+    font-family: Newtown; 
+    src: url(fonts/ofont.ru_OptimusC.ttf);
+
+	}
+	body {
+
+		/* background-color: rgb(187, 195, 196); */
+        background-position: top;
+        /* background-repeat: no-repeat; */
+        /* background-size: 100%;*/
+
+    }
+	.shapka{/* Это шапка первая */
+        width: 100vw;
+        height: 10vh;
+        background-color: #f2cd7f;
+        text-align: right;
+        margin-right: 50px;
+        vertical-align: baseline;
+
+        display: flex;
+    }
+	#navbar-example2{
+		background-color: #f2cd7f;
+	}
+
+	.shapka2{
+        width: 98vw;
+        height: auto;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex; /* Важно у родительского элемента! */
+
+
+    }
+
+/* 	.ps_image{
+		width: 80%;
+		text-align: center;
+	} */
+	.foto{
+        border: 5px solid rgb(238, 142, 142);
+        width: 15%;
+        height: 150px;
+    }
+
+
+    .card1 {/* мое фото */
+        width: 200px;
+        height: 200px;
+        background: url(img/I-1.jpg) no-repeat;
+    }
+    .card1:hover {
+        background: url(img/I-2.jpg) no-repeat;
+    }
+	/* Речь моя */
+[speech-bubble], [speech-bubble] * { box-sizing: border-box }
+
+[speech-bubble]{
+  --bbArrowSize: 2.5rem;
+  --bbBorderRadius: 0.80rem;
+  --bbPadding: 2rem;
+  background: var(--bbColor);
+  border-radius: var(--bbBorderRadius);
+  padding: var(--bbPadding);
+  position: relative;
+}
+
+[speech-bubble]::before{
+  content: ''; 
+  position: absolute;
+  background: var(--bbColor);
+}
+/* лево и право  */
+[speech-bubble]::before{
+  --height: calc(var(--bbArrowSize) / 2 *3);
+  width: var(--bbArrowSize);
+  height: var(--height);
+}
+/* из квадратика уголок слева */
+[speech-bubble]::before{
+  right: calc(100% - 2px);
+}
+[speech-bubble]::before{
+  top: calc(50% - var(--height) / 2);
+  clip-path: polygon(0 50%, 100% 12.5%, 100% 87.5%);
+}
+.opisanie1{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60em;
+
+	margin-top: 10px; /* расстояние между абзацами сделала */
+
+	color:#5e5d5d;
+	font-size: 20px;
+	font-family: Oswald-r;
+	text-align: center;
+	padding-left: 20px;
+	padding-top: 0px;
+	line-height: 1.1em;/* расстояние между строками */
+}
+
+.img7{
+	width: 50px;
+	height: 95px;
+	margin-top: -40px;
+	margin-left: -35px;
+	z-index: 3;
+
+} 
+.h1{
+	color: #585858;
+	font-size: 36px;
+	font-family: Oswald-b;
+	font-weight: 700;
+	text-align: center;
+
+}
+h2{
+	color:#5e5d5d;
+	font-size: 25px;
+	font-family: Oswald-r;
+
+	text-align: center;
+}
+h3{
+	color:#5e5d5d;
+	font-size: 25px;
+	font-family: Oswald-r;
+
+	text-align: center;
+}
+.logo{
+
+    width: 50%;
+    height: auto;
+}
+.web{
+	width: 50px;
+    height: auto;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+
+.web{
+    height: auto;
+}
+
+
+
+
+		/* ----------------- */
+
+.bg{
+	background-color: red;
+
+}
+.bg2{
+	background-color: rgb(2, 2, 2);
+	
+}
+.h4{
+	text-align: center;
+	background-color: none;
+}
+.nav-link {
+    color: #000;
+	font-family: Oswald-r;
+	margin-top: 25px;
+	margin-right: 30px;
+}
+.nav-item {
+    color: #000;
+	font-family: Oswald-r;
+	margin-top: 25px;
+	margin-right: 30px;
+}
+
+
+.text-center{
+	text-align: center;
+}
+
+.otsup_megdu{
+	margin-bottom: 2vh;
+	margin-top: 3vh;
+	text-align: center;
+}
+
+.row img {
+
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+br {
+	 margin-bottom: 5px; 
+	 margin-top: 5px; 
+}
+ .vr{
+	background-color: black;
+	border-radius: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+ }
+ .rown{
+	justify-content: center;
+ }
+ .card25{
+	margin-left: 0 5x;
+ }
+ .card{
+	padding: 0 ;
+	margin-left: 15px;
+	margin-right: 15px;
+ }
+.social-icons{
+width: 1vw;
+height: auto;
+justify-content: center;
+ }
+
+.container6 {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+  }
+
+.column6 {
+	flex-basis: 48%;
+  }
+  footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+  }
+
+  .social-icons {
+	margin-top: 10px;
+  }
+
+  .social-icons a {
+	margin: 0 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 24px;
+  }
+  ii{
+margin-top: 5vh!important;
+  }
